@@ -1,0 +1,89 @@
+body{
+    background: url("c3.jpg") fixed right;
+ 
+   
+    
+}
+
+p{
+    color:red;
+}
+table, th, td {
+    border: 3px solid black;
+    border-radius: 10x;
+    border-style: double;
+    padding: 4px;
+  }
+  tr:nth-child() {
+  background-color: #dbd82c;
+  }
+  #myheading {
+     
+      color: white;
+      font-size: larger;
+  }
+  .c1{
+    color: brown;
+  }
+
+  #myDiv {
+    transform: rotateX(150deg);
+  }
+  #div1 {
+    
+    width: 50px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count:  300;
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    10%  {background-color:chocolate; left:200px; top:0px;}
+
+    20%  {background-color:blue; left:200px; top:200px;}
+    35%  {background-color:green; left:0px; top:200px;}
+    40% {background-color:rgb(130, 22, 152); left:0px; top:0px;}
+    50%   {background-color:red; left:0px; top:0px;}
+    60%  {background-color:rgb(139, 36, 180); left:200px; top:0px;}
+    70%  {background-color:rgb(66, 185, 233); left:200px; top:200px;}
+    80%  {background-color:rgb(224, 123, 14); left:0px; top:200px;}
+    90% {background-color:rgb(156, 12, 84); left:0px; top:0px;}
+    100% {background-color:rgb(147, 127, 127); left:0px; top:0px;}
+  }
+  #div2 {
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position:  relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count:  300;
+  }
+   
+  @keyframes example  { 
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+    0%   {background-color:red; left:0px; top:0px;}
+    10%  {background-color:yellow; left:200px; top:0px;}
+    20%  {background-color:blue; left:200px; top:200px;}
+    35%  {background-color:green; left:0px; top:200px;}
+    40% {background-color:rgb(130, 22, 152); left:0px; top:0px;}
+    50%   {background-color:red; left:0px; top:0px;}
+    60%  {background-color:rgb(139, 36, 180); left:200px; top:0px;}
+    70%  {background-color:rgb(66, 185, 233); left:200px; top:200px;}
+    80%  {background-color:rgb(224, 123, 14); left:0px; top:200px;}
+    90% {background-color:rgb(156, 12, 84); left:0px; top:0px;}
+    100% {background-color:rgb(147, 127, 127); left:0px; top:0px;}
+    
+
+  }
+
+.para{
+    color:green;
+}
+
