@@ -165,7 +165,7 @@
 # print(l)
 #--------------------------------------------------------------------------------
 
-import os
+#import os
 
 # f =open("/Users/sparshagarwal/Desktop/Training/test.rtf","w")
 # f.write("this is file demo\n")
@@ -179,19 +179,19 @@ import os
 #         print(line)
 
 
-f = open("testfile.rtf","w")
-for i in range(1,11):
-    s = "This is line "+str(i)+".\n"
-    f.write(s)
-f.close
+# f = open("testfile.rtf","w")
+# for i in range(1,11):
+#     s = "This is line "+str(i)+".\n"
+#     f.write(s)
+# f.close
 
-with open("testfile.rtf","r")as f:
-    # f.seek(0,0)
-    line = f.readlines()
-    # print(line)
-    line[3] = "This is updated line 4.\n"
-    with open("testfile.rtf","w") as fr:
-        fr.writelines(line)
-        fr.close
-    f.close
+# with open("testfile.rtf","r")as f:
+#     # f.seek(0,0)
+#     line = f.readlines()
+#     # print(line)
+#     line[3] = "This is updated line 4.\n"
+#     with open("testfile.rtf","w") as fr:
+#         fr.writelines(line)
+#         fr.close
+#     f.close
 
