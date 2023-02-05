@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        {#this hidden tag is for CSRF#}
+        {{form.hidden_tag()}} 
+        <br><br>
+        {{form.breed.label}}{{form.breed()}}
+        <br><br>
+        {{form.tomcat.label}}{{form.tomcat()}}
+        <br><br>
+        {{form.mood.label}}{{form.mood()}}
+        <br><br>
+        {{form.food_choice.label}}{{form.food_choice()}}
+        <br><br>
+        {{form.feedback.label}}{{form.feedback()}}
+        <br><br>
+        {{form.submit.label}}  {{form.submit()}}
+
+    </form>
+    
+</body>
+</html>

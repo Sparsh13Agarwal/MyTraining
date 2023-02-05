@@ -1,0 +1,12 @@
+{% extends "pet_layout.html" %}
+{% block body %}
+    <h1> Thank you!!!, Form Submitted successfully</h1>
+    <p>Yours details are mentioned below</p>
+    <ul>
+        <li>pet name is {{session['pet_name']}}</li>
+        <li>your pet is ::{{session['pet_type']}}</li>
+        <li>breed::{{session['breed']}}</li>
+        <li>color::{{session['pet_color']}}</li>
+        <li>owner ::{{session['owner_name']}}</li>
+    </ul>
+{% endblock %}

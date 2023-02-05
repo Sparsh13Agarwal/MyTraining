@@ -1,0 +1,10 @@
+{% extends "pet_layout.html" %}
+{% block body %}
+<h1 style="text-align: center;color: brown;">Log File</h1>
+<div style="text-align: center;">
+    {%for i in data%}
+    {{i}} <br>
+    {%endfor%}
+</div>
+
+{%endblock%}

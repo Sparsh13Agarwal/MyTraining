@@ -1,0 +1,16 @@
+{% extends "pet_layout.html" %}
+{% block body %}
+
+    <form method="post">
+        {#this hidden tag is for CSRF#}
+        {{form.hidden_tag()}} 
+        <br><br>
+        {{form.pet_id.label}}{{form.pet_id()}}
+        <br><br>
+      
+        {{form.pet_name.label}}{{form.pet_name()}}
+        <br><br>
+        {{form.submit.label}}{{form.submit()}}
+
+    </form>
+{%endblock%}
