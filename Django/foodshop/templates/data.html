@@ -7,16 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hiiii</h1>
-    <h1>Welcome to Django Template</h1>
-    <p>Data dict is{{d}}</p>
-    <h2>The list is</h2>
+    <h1> food items </h1>
     <ul>
-        {% for i in list %}
-        <li>{{i}}</li>
+        {%for item in item_list%}
+        <li>{{item.id}}</li>
         {% endfor %}
-
     </ul>
-    
+
 </body>
 </html>
